@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  radioPrograms
 //
-//  Created by erica palm on 2019-07-01.
+//  Created by Imran Khan on 2019-07-01.
 //  Copyright © 2019 upgradingmachine. All rights reserved.
 //
 

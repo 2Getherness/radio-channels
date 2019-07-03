@@ -8,21 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		07838E2F22CA4C9C00AD344C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07838E2E22CA4C9C00AD344C /* AppDelegate.swift */; };
-		07838E3122CA4C9C00AD344C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07838E3022CA4C9C00AD344C /* ViewController.swift */; };
 		07838E3422CA4C9C00AD344C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07838E3222CA4C9C00AD344C /* Main.storyboard */; };
 		07838E3622CA4C9F00AD344C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07838E3522CA4C9F00AD344C /* Assets.xcassets */; };
 		07838E3922CA4C9F00AD344C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07838E3722CA4C9F00AD344C /* LaunchScreen.storyboard */; };
 		07838E4122CA550400AD344C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07838E4022CA550300AD344C /* Default-568h@2x.png */; };
 		07838E4322CA932D00AD344C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07838E4222CA932D00AD344C /* TableViewCell.swift */; };
 		07838E4522CAA8A200AD344C /* ProgramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07838E4422CAA8A200AD344C /* ProgramsTableViewController.swift */; };
-		07838E4722CAB46200AD344C /* RadioProgramStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07838E4622CAB46200AD344C /* RadioProgramStruct.swift */; };
 		07EB518C22CBBE0100A4AE90 /* Swift.gitignore in Sources */ = {isa = PBXBuildFile; fileRef = 07EB518B22CBBE0100A4AE90 /* Swift.gitignore */; };
+		07EB519022CBE26300A4AE90 /* DetailPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB518F22CBE26300A4AE90 /* DetailPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07838E2B22CA4C9C00AD344C /* radioPrograms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radioPrograms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07838E2E22CA4C9C00AD344C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07838E3022CA4C9C00AD344C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07838E3322CA4C9C00AD344C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07838E3522CA4C9F00AD344C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07838E3822CA4C9F00AD344C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,8 +28,8 @@
 		07838E4022CA550300AD344C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		07838E4222CA932D00AD344C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		07838E4422CAA8A200AD344C /* ProgramsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsTableViewController.swift; sourceTree = "<group>"; };
-		07838E4622CAB46200AD344C /* RadioProgramStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioProgramStruct.swift; sourceTree = "<group>"; };
 		07EB518B22CBBE0100A4AE90 /* Swift.gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = Swift.gitignore; sourceTree = "<group>"; };
+		07EB518F22CBE26300A4AE90 /* DetailPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +65,12 @@
 			children = (
 				07838E2E22CA4C9C00AD344C /* AppDelegate.swift */,
 				07838E4422CAA8A200AD344C /* ProgramsTableViewController.swift */,
+				07838E4222CA932D00AD344C /* TableViewCell.swift */,
+				07EB518F22CBE26300A4AE90 /* DetailPageController.swift */,
 				07838E3222CA4C9C00AD344C /* Main.storyboard */,
 				07838E3522CA4C9F00AD344C /* Assets.xcassets */,
 				07838E3722CA4C9F00AD344C /* LaunchScreen.storyboard */,
 				07838E3A22CA4C9F00AD344C /* Info.plist */,
-				07838E4222CA932D00AD344C /* TableViewCell.swift */,
-				07838E3022CA4C9C00AD344C /* ViewController.swift */,
-				07838E4622CAB46200AD344C /* RadioProgramStruct.swift */,
 				07EB518B22CBBE0100A4AE90 /* Swift.gitignore */,
 			);
 			path = radioPrograms;
@@ -151,10 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07838E4722CAB46200AD344C /* RadioProgramStruct.swift in Sources */,
 				07838E4322CA932D00AD344C /* TableViewCell.swift in Sources */,
 				07EB518C22CBBE0100A4AE90 /* Swift.gitignore in Sources */,
-				07838E3122CA4C9C00AD344C /* ViewController.swift in Sources */,
+				07EB519022CBE26300A4AE90 /* DetailPageController.swift in Sources */,
 				07838E4522CAA8A200AD344C /* ProgramsTableViewController.swift in Sources */,
 				07838E2F22CA4C9C00AD344C /* AppDelegate.swift in Sources */,
 			);
@@ -303,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RZ58638GJ;
 				INFOPLIST_FILE = radioPrograms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RZ58638GJ;
 				INFOPLIST_FILE = radioPrograms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
