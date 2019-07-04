@@ -14,7 +14,6 @@
 		07838E4122CA550400AD344C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07838E4022CA550300AD344C /* Default-568h@2x.png */; };
 		07838E4322CA932D00AD344C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07838E4222CA932D00AD344C /* TableViewCell.swift */; };
 		07838E4522CAA8A200AD344C /* ProgramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07838E4422CAA8A200AD344C /* ProgramsTableViewController.swift */; };
-		07EB518C22CBBE0100A4AE90 /* Swift.gitignore in Sources */ = {isa = PBXBuildFile; fileRef = 07EB518B22CBBE0100A4AE90 /* Swift.gitignore */; };
 		07EB519022CBE26300A4AE90 /* DetailPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB518F22CBE26300A4AE90 /* DetailPageController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		07838E4022CA550300AD344C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		07838E4222CA932D00AD344C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		07838E4422CAA8A200AD344C /* ProgramsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsTableViewController.swift; sourceTree = "<group>"; };
-		07EB518B22CBBE0100A4AE90 /* Swift.gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = Swift.gitignore; sourceTree = "<group>"; };
 		07EB518F22CBE26300A4AE90 /* DetailPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +69,6 @@
 				07838E3522CA4C9F00AD344C /* Assets.xcassets */,
 				07838E3722CA4C9F00AD344C /* LaunchScreen.storyboard */,
 				07838E3A22CA4C9F00AD344C /* Info.plist */,
-				07EB518B22CBBE0100A4AE90 /* Swift.gitignore */,
 			);
 			path = radioPrograms;
 			sourceTree = "<group>";
@@ -149,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07838E4322CA932D00AD344C /* TableViewCell.swift in Sources */,
-				07EB518C22CBBE0100A4AE90 /* Swift.gitignore in Sources */,
 				07EB519022CBE26300A4AE90 /* DetailPageController.swift in Sources */,
 				07838E4522CAA8A200AD344C /* ProgramsTableViewController.swift in Sources */,
 				07838E2F22CA4C9C00AD344C /* AppDelegate.swift in Sources */,
