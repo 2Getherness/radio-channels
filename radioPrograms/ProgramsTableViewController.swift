@@ -41,19 +41,22 @@ struct socialmediaplatforms: Decodable {
 /* ProgramsTableViewController är den huvud entré till applikationen efter när applikationen har kört navigationController */
 class ProgramsTableViewController: UITableViewController {
 
+    @IBOutlet weak var ActivityIndicatorView: UIView!
+    @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
     // usableRadioPrograms är array av en typ radioChannels
     var usableRadioPrograms = [radioChannels]()
-    final let jsonUrl = "http://api.sr.se/api/v2/programs?format=json&size=40"
-    
+    var page = 1
+    var scrolled = false
     // I viewDidLoad har har gjord det viktigaste delan t.ex anrupa url och samt kopera data till globala variabln usableRatioPrograms
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-        self.parseJSON(jsonUrl: jsonUrl)
-        
+        self.parseJSON()
+        self.ActivityIndicatorView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50.0)
+        self.ActivityIndicator.color = UIColor.blue
+        self.ActivityIndicatorView.isHidden = true
     }
 
     // Att tableView saka innehålla en section retunerar jag 1
@@ -91,6 +94,12 @@ class ProgramsTableViewController: UITableViewController {
         }
         let prog = self.usableRadioPrograms[indexPath.row]
         // när jag har data i usableRadioPrograms array och cell, då kommer jag åt cellen contents t.ex imageView eller label och filler från prog variable
+        
+        cell.radioProgramImage.layer.borderWidth = 1
+        cell.radioProgramImage.layer.masksToBounds = false
+        cell.radioProgramImage.layer.borderColor = UIColor.black.cgColor
+        cell.radioProgramImage.layer.cornerRadius = 10
+        cell.radioProgramImage.clipsToBounds = true
         cell.radioProgramName.text = prog.channel.name
         if let image = prog.programimage {
             if let imageUrl = URL(string: image) {
@@ -109,8 +118,33 @@ class ProgramsTableViewController: UITableViewController {
         }
         return cell
     }
+    
+    // I denna metod kollar på scroll upp till den sista raden. Om det är sista så anrupar jag parseJSON() metoden och lägga till ny data i usableRadioPrograms array. Metoden tar en sekund att köra parseJSON() metoden.
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+//        self.ActivityIndicatorView.isHidden = false
+        self.ActivityIndicatorView.isHidden = false
+        self.ActivityIndicator.startAnimating()
+        let lastElement = self.usableRadioPrograms.count - 1
+        if indexPath.row == lastElement {
+            self.scrolled = true
+            if self.scrolled == true {
+                self.page += 1
+                print(self.page)
+                print("scrolled to last row!")
+                Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
+                    self.parseJSON()
+                }
+                self.scrolled = false
+                self.ActivityIndicator.stopAnimating()
+                self.ActivityIndicatorView.isHidden = true
+            }
+        }
+    }
+    
     // Så fort applikationen kommer till den här controller så i ViewDidLoad() körs denna metod som är ansvarig för att hämta data från servern via url:an
-    func parseJSON(jsonUrl: String) {
+    func parseJSON() {
+        let jsonUrl = "http://api.sr.se/api/v2/programs?format=json&size=10&page=\(self.page)"
         guard let url = URL(string: jsonUrl) else { return }
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             DispatchQueue.main.async {

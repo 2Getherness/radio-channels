@@ -73,6 +73,10 @@ class DetailPageController: UIViewController {
                 }
             }
         }
+        
+        radioImage.layer.masksToBounds = false
+        radioImage.layer.cornerRadius = radioImage.frame.height/2
+        radioImage.clipsToBounds = true
         // För att visa eller gömma socialMedia imageView kör jag denna metod
         self.hideImageViews(image: self.facebookImageView)
         self.hideImageViews(image: self.instagramImageView)

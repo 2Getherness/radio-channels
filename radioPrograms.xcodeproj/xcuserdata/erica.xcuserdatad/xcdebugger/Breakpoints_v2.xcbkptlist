@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.59993"
+            timestampString = "583930978.092317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "ProgramsTableViewController"
             landmarkType = "3">
             <Locations>
@@ -102,168 +102,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "radioPrograms/TableViewCell.swift"
-            timestampString = "583861162.601145"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "TableViewCell"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "radioPrograms.TableViewCell.radioProgramName.getter : weak Swift.Optional&lt;__C.UILabel&gt;"
-                  moduleName = "radioPrograms"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/imrankhan/development/radioPrograms/radioPrograms/TableViewCell.swift"
-                  timestampString = "583713598.734495"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "radioPrograms.TableViewCell.radioProgramName.setter : weak Swift.Optional&lt;__C.UILabel&gt;"
-                  moduleName = "radioPrograms"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/imrankhan/development/radioPrograms/radioPrograms/TableViewCell.swift"
-                  timestampString = "583713598.740561"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "106">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "radioPrograms.TableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; radioPrograms.TableViewCell"
-                  moduleName = "radioPrograms"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/imrankhan/development/radioPrograms/radioPrograms/TableViewCell.swift"
-                  timestampString = "583713598.746348"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "171">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "radioPrograms.TableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;radioPrograms.TableViewCell&gt;"
-                  moduleName = "radioPrograms"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/imrankhan/development/radioPrograms/radioPrograms/TableViewCell.swift"
-                  timestampString = "583713598.750648"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "142">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "radioPrograms/TableViewCell.swift"
-            timestampString = "583861162.601238"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "TableViewCell"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "radioPrograms.TableViewCell.radioProgramImage.getter : weak Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "radioPrograms"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/imrankhan/development/radioPrograms/radioPrograms/TableViewCell.swift"
-                  timestampString = "583713598.762082"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "radioPrograms.TableViewCell.radioProgramImage.setter : weak Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "radioPrograms"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/imrankhan/development/radioPrograms/radioPrograms/TableViewCell.swift"
-                  timestampString = "583713598.768231"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "106">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "radioPrograms.TableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; radioPrograms.TableViewCell"
-                  moduleName = "radioPrograms"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/imrankhan/development/radioPrograms/radioPrograms/TableViewCell.swift"
-                  timestampString = "583713598.772076"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "57">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "radioPrograms.TableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;radioPrograms.TableViewCell&gt;"
-                  moduleName = "radioPrograms"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/imrankhan/development/radioPrograms/radioPrograms/TableViewCell.swift"
-                  timestampString = "583713598.774394"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "50">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.601313"
+            timestampString = "583930978.094337"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -275,7 +119,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.601858"
+            timestampString = "583930978.09518"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "radioPrograms/ProgramsTableViewController.swift"
+            timestampString = "583930978.099965"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "radioPrograms/ProgramsTableViewController.swift"
+            timestampString = "583930978.101689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
@@ -291,43 +167,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.602351"
+            timestampString = "583930978.102441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.603104"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.603634"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -339,27 +183,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.604133"
+            timestampString = "583930978.1030281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.604614"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -371,11 +199,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/ProgramsTableViewController.swift"
-            timestampString = "583861162.6050889"
+            timestampString = "583930978.103647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -387,7 +215,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/DetailPageController.swift"
-            timestampString = "583861162.605647"
+            timestampString = "583930978.104286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -403,11 +231,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/DetailPageController.swift"
-            timestampString = "583861162.607235"
+            timestampString = "583930978.105008"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "hideImageViews(image:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -419,11 +247,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/DetailPageController.swift"
-            timestampString = "583861162.608338"
+            timestampString = "583930978.105819"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "checkForSocialMedia(media:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -435,12 +263,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "radioPrograms/DetailPageController.swift"
-            timestampString = "583861162.610378"
+            timestampString = "583930978.106894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "checkForSocialMedia(media:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "radioPrograms/ProgramsTableViewController.swift"
+            timestampString = "583930978.107821"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "tableView(_:willDisplay:forRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "radioPrograms/ProgramsTableViewController.swift"
+            timestampString = "583930978.110443"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "tableView(_:willDisplay:forRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

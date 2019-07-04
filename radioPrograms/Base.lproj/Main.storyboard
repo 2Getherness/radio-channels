@@ -18,6 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="tyr-FB-Gh6">
+                            <rect key="frame" x="0.0" y="128" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qJT-NB-1co">
+                                    <rect key="frame" x="177.66666666666666" y="3" width="20" height="38"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="qJT-NB-1co" firstAttribute="top" secondItem="tyr-FB-Gh6" secondAttribute="top" constant="3" id="6uf-jO-Usf"/>
+                                <constraint firstAttribute="bottom" secondItem="qJT-NB-1co" secondAttribute="bottom" constant="3" id="JWp-28-Htj"/>
+                                <constraint firstItem="qJT-NB-1co" firstAttribute="centerX" secondItem="tyr-FB-Gh6" secondAttribute="centerX" id="dF1-cy-Qnr"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="programCell" rowHeight="100" id="2QS-ps-ZkI" customClass="TableViewCell" customModule="radioPrograms" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
@@ -68,6 +82,8 @@
                         <barButtonItem key="backBarButtonItem" title="List" id="8Rf-PS-Hnj"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="ActivityIndicator" destination="qJT-NB-1co" id="UxC-Wn-BQl"/>
+                        <outlet property="ActivityIndicatorView" destination="tyr-FB-Gh6" id="5JQ-hs-LhB"/>
                         <outlet property="tableView" destination="JIT-dx-03B" id="khn-WG-psg"/>
                     </connections>
                 </tableViewController>
@@ -411,11 +427,20 @@
                         <viewLayoutGuide key="safeArea" id="p6n-Nt-VdZ"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="5iY-DX-iog"/>
+                                <exclude reference="803-OY-Ese"/>
                                 <exclude reference="LF5-wP-zcc"/>
                                 <exclude reference="Nww-th-e3P"/>
                                 <exclude reference="S0A-Zm-r7G"/>
                                 <exclude reference="aOp-2I-AOo"/>
                                 <exclude reference="rm4-1p-Npm"/>
+                                <exclude reference="2KG-BI-HWv"/>
+                                <exclude reference="Cbo-MQ-Zmx"/>
+                                <exclude reference="MyL-sH-agx"/>
+                                <exclude reference="WNh-Pg-xTh"/>
+                                <exclude reference="gxb-te-L41"/>
+                                <exclude reference="yMq-Zw-HOi"/>
+                                <exclude reference="zDq-oy-vNX"/>
                                 <exclude reference="7mt-v3-KyL"/>
                                 <exclude reference="PxQ-ii-sBN"/>
                                 <exclude reference="QhD-me-IDy"/>
@@ -426,58 +451,49 @@
                                 <exclude reference="we9-Ri-6YN"/>
                                 <exclude reference="m0Z-Zf-Sgt"/>
                                 <exclude reference="4NY-rF-Exg"/>
-                                <exclude reference="5iY-DX-iog"/>
-                                <exclude reference="803-OY-Ese"/>
                                 <exclude reference="MXK-Ty-3aj"/>
                                 <exclude reference="VGX-oX-V4L"/>
                                 <exclude reference="fwH-Uf-5W2"/>
-                                <exclude reference="2KG-BI-HWv"/>
-                                <exclude reference="Cbo-MQ-Zmx"/>
-                                <exclude reference="MyL-sH-agx"/>
-                                <exclude reference="WNh-Pg-xTh"/>
-                                <exclude reference="gxb-te-L41"/>
-                                <exclude reference="yMq-Zw-HOi"/>
-                                <exclude reference="zDq-oy-vNX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="Nww-th-e3P"/>
                                 <include reference="S0A-Zm-r7G"/>
+                                <include reference="MyL-sH-agx"/>
+                                <include reference="gxb-te-L41"/>
+                                <include reference="zDq-oy-vNX"/>
                                 <include reference="QhD-me-IDy"/>
                                 <include reference="bPw-C3-RcZ"/>
                                 <include reference="m0Z-Zf-Sgt"/>
                                 <include reference="MXK-Ty-3aj"/>
-                                <include reference="MyL-sH-agx"/>
-                                <include reference="gxb-te-L41"/>
-                                <include reference="zDq-oy-vNX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
+                                <include reference="5iY-DX-iog"/>
+                                <include reference="803-OY-Ese"/>
                                 <include reference="LF5-wP-zcc"/>
+                                <include reference="yMq-Zw-HOi"/>
                                 <include reference="PxQ-ii-sBN"/>
                                 <include reference="lTq-LG-PWc"/>
                                 <include reference="we9-Ri-6YN"/>
                                 <include reference="pMP-Xa-0Ks"/>
-                                <include reference="5iY-DX-iog"/>
-                                <include reference="803-OY-Ese"/>
                                 <include reference="VGX-oX-V4L"/>
-                                <include reference="yMq-Zw-HOi"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="aOp-2I-AOo"/>
                                 <include reference="rm4-1p-Npm"/>
+                                <include reference="2KG-BI-HWv"/>
+                                <include reference="Cbo-MQ-Zmx"/>
+                                <include reference="WNh-Pg-xTh"/>
                                 <include reference="7mt-v3-KyL"/>
                                 <include reference="sZk-iS-kIk"/>
                                 <include reference="XRU-da-SL1"/>
                                 <include reference="4NY-rF-Exg"/>
                                 <include reference="fwH-Uf-5W2"/>
-                                <include reference="2KG-BI-HWv"/>
-                                <include reference="Cbo-MQ-Zmx"/>
-                                <include reference="WNh-Pg-xTh"/>
                             </mask>
                         </variation>
                     </view>

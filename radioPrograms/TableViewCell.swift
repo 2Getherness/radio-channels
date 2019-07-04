@@ -12,8 +12,4 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var radioProgramImage: UIImageView!
     @IBOutlet weak var radioProgramName: UILabel!
 
-
-    func setProgram() {
-        
-    }
 }
