@@ -40,13 +40,6 @@ class DetailPageController: UIViewController {
         self.gotoWeb(channelObject: recievedData!, platformName: "Instagram")
     }
     
-    var programslug: String?
-    var name: String?
-    var fullName: String?
-    var desc: String?
-    var editor: String?
-    var email: String?
-    
     // recievedData är den typ av variable som innehåller samma egenskapar som radioChannels har
     var recievedData: radioChannels?
     override func viewDidLoad() {
@@ -87,7 +80,6 @@ class DetailPageController: UIViewController {
         self.checkForSocialMedia(media: data)
     }
     
-    @IBOutlet var gotoSocialMediaLabelCollection: [UIImageView]!
 
     func hideImageViews(image: UIImageView) {
         image.isHidden = true
@@ -133,7 +125,7 @@ class DetailPageController: UIViewController {
         }
     }
 
-    @IBAction func dismissView(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+//    @IBAction func dismissView(_ sender: Any) {
+//        self.dismiss(animated: true, completion: nil)
+//    }
 }
