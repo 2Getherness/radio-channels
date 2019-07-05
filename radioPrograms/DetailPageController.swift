@@ -11,6 +11,9 @@ import UIKit
 class DetailPageController: UIViewController {
     // Olika labels, textview, imageView som är koplad till DetailPageController storyboard
     @IBOutlet weak var radioImage: UIImageView!
+    @IBOutlet weak var bigImageView: UIImageView!
+    @IBOutlet weak var popupView: UIView!
+    
     @IBOutlet weak var channelName: UILabel!
     @IBOutlet weak var channelEditor: UILabel!
     @IBOutlet weak var editorEmail: UILabel!
@@ -26,6 +29,10 @@ class DetailPageController: UIViewController {
     @IBOutlet var twitterStackClicked: UITapGestureRecognizer!
     @IBOutlet var instagramStackClicked: UITapGestureRecognizer!
     
+    
+    var bigPictureisHidden = false
+    
+    
     // Action metoder för facebook, twitter, instagram som körs gotoWeb metoden
     @IBAction func facebookStackClicked(_ sender: Any) {
         print("facebook")
@@ -38,6 +45,9 @@ class DetailPageController: UIViewController {
     @IBAction func instagramStackClicked(_ sender: Any) {
         print("instagram")
         self.gotoWeb(channelObject: recievedData!, platformName: "Instagram")
+    }
+    @IBAction func profilePictureTapped(_ sender: Any) {
+        self.hideAndShowPicture(popupView: self.popupView)
     }
     
     // recievedData är den typ av variable som innehåller samma egenskapar som radioChannels har
@@ -53,6 +63,27 @@ class DetailPageController: UIViewController {
         //print("Data recieved from Program Table Controller: ","\(String(describing: recievedData))")
         
         
+        self.showImage(imageView: radioImage)
+        
+        radioImage.layer.masksToBounds = false
+        radioImage.layer.cornerRadius = radioImage.frame.height/2
+        radioImage.clipsToBounds = true
+        
+        // alla socialMedia imageView ska vara gömda från början
+        self.facebookImageView.isHidden = true
+        self.instagramImageView.isHidden = true
+        self.twitterImageView.isHidden = true
+        
+        self.popupView.alpha = 0
+        guard let data = recievedData else {
+            return
+        }
+        // För att visa eller gömma socialMedia imageView kör jag denna metod
+        self.checkForSocialMedia(media: data)
+    }
+    
+    // showImage visar den lilla bilden samt när man trycker på bilden så vissas den i en stor viewImage också.
+    func showImage(imageView: UIImageView) {
         if let image = recievedData?.programimage {
             if let imageUrl = URL(string: image) {
                 DispatchQueue.global().async {
@@ -60,32 +91,40 @@ class DetailPageController: UIViewController {
                     if let data = data {
                         let image = UIImage(data: data)
                         DispatchQueue.main.async {
-                            self.radioImage.image = image
+                            imageView.image = image
                         }
                     }
                 }
             }
         }
-        
-        radioImage.layer.masksToBounds = false
-        radioImage.layer.cornerRadius = radioImage.frame.height/2
-        radioImage.clipsToBounds = true
-        // För att visa eller gömma socialMedia imageView kör jag denna metod
-        self.hideImageViews(image: self.facebookImageView)
-        self.hideImageViews(image: self.instagramImageView)
-        self.hideImageViews(image: self.twitterImageView)
-        guard let data = recievedData else {
-            return
+    }
+    
+    // Animering på visa bilden i popup view
+    func hideAndShowPicture(popupView: UIView) {
+        if self.popupView.alpha == 1 {
+            UIView.animate(withDuration: 0.3/*Animation Duration second*/, animations: {
+                self.popupView.alpha = 0
+            }, completion:  {
+                (value: Bool) in
+//                self.showImage(imageView: self.bigImageView)
+                guard let image = self.radioImage.image else { return }
+                self.bigImageView.image = image
+            })
+        } else if self.popupView.alpha == 0 {
+            UIView.animate(withDuration: 0.3/*Animation Duration second*/, animations: {
+                self.popupView.alpha = 1
+            }, completion: nil)
         }
-        self.checkForSocialMedia(media: data)
     }
-    
 
-    func hideImageViews(image: UIImageView) {
-        image.isHidden = true
-    }
+//    func hideImageViews(image: UIImageView) {
+//        UIView.animateKeyframes(withDuration: 1.0, delay: 0.5, animations: {
+//            image.alpha = 0
+//        }, completion: nil)
+//    }
     
-    // i denna metod hämtar jag radiChannels objekt och strängen som har namn på de olika platformer. Om strängen matchar med radioChannel objekt platform sträng då varigerar jag till vebview med den specifika länken
+    // i denna metod hämtar jag radiChannels objekt och strängen som har namn på de olika platformer.
+    // Om strängen matchar med radioChannel objekt platform sträng då varigerar jag till vebview med den specifika länken
     func gotoWeb(channelObject: radioChannels, platformName: String) {
         guard let socialMediaform = channelObject.socialmediaplatforms else {
             return
